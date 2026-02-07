@@ -1,0 +1,11 @@
+modelElementID,codeId
+2,org/example/Main.java
+3,org/example/DefaultFenValidator.java
+4,org/example/DefaultFenValidator.java
+5,org/example/DefaultFenStructureValidator.java
+5,org/example/DefaultPieceCountValidator.java
+5,org/example/DefaultKingPlacementValidator.java
+6,org/example/PieceCountValidator.java
+7,org/example/DefaultPieceCountValidator.java
+8,org/example/DefaultKingPlacementValidator.java
+10,org/example/FenValidator.java

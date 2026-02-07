@@ -1,0 +1,18 @@
+The Main class represents the entry point of the system and is implemented in Main.java.
+Main invokes the FenValidator interface defined in FenValidator.java.
+The DefaultFenValidator class implements the FenValidator interface.
+DefaultFenValidator coordinates multiple validation rules and is implemented in DefaultFenValidator.java.
+DefaultFenValidator calls the isValid method of components providing the FenValidationRule interface.
+The DefaultFenStructureValidator class implements the FenValidationRule interface.
+DefaultFenStructureValidator validates the structure of a FEN string and is implemented in DefaultFenStructureValidator.java.
+The DefaultFenStructureValidator ensures that the FEN contains eight ranks.
+The DefaultFenStructureValidator ensures that each rank describes exactly eight squares.
+The DefaultPieceCountValidator class implements the FenValidationRule interface.
+DefaultPieceCountValidator validates the number of chess pieces and is implemented in DefaultPieceCountValidator.java.
+DefaultPieceCountValidator ensures exactly one white king and one black king exist.
+DefaultPieceCountValidator ensures that the total number of pieces does not exceed thirty-two.
+The DefaultKingPlacementValidator class implements the FenValidationRule interface.
+DefaultKingPlacementValidator validates the placement of kings and is implemented in DefaultKingPlacementValidator.java.
+DefaultKingPlacementValidator ensures that the white king and the black king are not placed on adjacent squares.
+Each validator component represents an independent validation rule implemented in its corresponding Java class.
+The validation rules are executed by the DefaultFenValidator class.

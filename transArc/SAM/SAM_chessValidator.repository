@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" id="_VdKBIDVWEeqPG_FgW3bi6Q" entityName="ChessPositionValidator">
+
+  <components__Repository xsi:type="repository:BasicComponent" id="_bC13QDVWEeqPG_FgW3bi6Q" entityName="Main">
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_jrHNQDVZEeqPG_FgW3bi6Q" entityName="Required_FenValidator_Main" requiredInterface__OperationRequiredRole="_gGczsDVZEeqPG_FgW3bi6Q"/>
+  </components__Repository>
+
+  <components__Repository xsi:type="repository:BasicComponent" id="_AiuxcDVdEeqPG_FgW3bi6Q" entityName="DefaultFenValidator">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_CPV_DFV_Prov_001" entityName="Provided_FenValidator" providedInterface__OperationProvidedRole="_gGczsDVZEeqPG_FgW3bi6Q"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_CPV_DFV_Req_001" entityName="Required_FenValidationRule" requiredInterface__OperationRequiredRole="_py9KsDVYEeqPG_FgW3bi6Q"/>
+  </components__Repository>
+
+  <components__Repository xsi:type="repository:BasicComponent" id="_RAVbYDVdEeqPG_FgW3bi6Q" entityName="DefaultFenStructureValidator">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_CPV_DFSV_Prov_001" entityName="Provided_FenStructureValidator" providedInterface__OperationProvidedRole="_Mh_1QDVcEeqPG_FgW3bi6Q"/>
+  </components__Repository>
+
+  <components__Repository xsi:type="repository:BasicComponent" id="_TKDxQDVdEeqPG_FgW3bi6Q" entityName="DefaultPieceCountValidator">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_CPV_DPCV_Prov_001" entityName="Provided_PieceCountValidator" providedInterface__OperationProvidedRole="_Sb4SYDVfEeqPG_FgW3bi6Q"/>
+  </components__Repository>
+
+  <components__Repository xsi:type="repository:BasicComponent" id="_VLMxQDVdEeqPG_FgW3bi6Q" entityName="DefaultKingPlacementValidator">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_CPV_DKPV_Prov_001" entityName="Provided_KingPlacementValidator" providedInterface__OperationProvidedRole="_BYKdQDVgEeqPG_FgW3bi6Q"/>
+  </components__Repository>
+
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_gGczsDVZEeqPG_FgW3bi6Q" entityName="FenValidator">
+    <signatures__OperationInterface id="_hE4K0DVZEeqPG_FgW3bi6Q" entityName="validate">
+      <parameters__OperationSignature parameterName="fen">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_py9KsDVYEeqPG_FgW3bi6Q" entityName="FenValidationRule">
+    <signatures__OperationInterface id="_v-SrkDVYEeqPG_FgW3bi6Q" entityName="isValid">
+      <parameters__OperationSignature parameterName="fen">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_Mh_1QDVcEeqPG_FgW3bi6Q" entityName="FenStructureValidator">
+    <signatures__OperationInterface id="_NiisQDVcEeqPG_FgW3bi6Q" entityName="isValid">
+      <parameters__OperationSignature parameterName="fen">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_Sb4SYDVfEeqPG_FgW3bi6Q" entityName="PieceCountValidator">
+    <signatures__OperationInterface id="_CtRPADVgEeqKjI323B3R3w" entityName="isValid">
+      <parameters__OperationSignature parameterName="fen">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_BYKdQDVgEeqPG_FgW3bi6Q" entityName="KingPlacementValidator">
+    <signatures__OperationInterface id="_OJ2AADVgEeqPG_FgW3bi6Q" entityName="isValid">
+      <parameters__OperationSignature parameterName="fen">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+      <returnType__OperationSignature xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.3"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+
+</repository:Repository>

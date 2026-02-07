@@ -1,0 +1,11 @@
+sentenceID,codeID
+_BYKdQDVgEeqPG_FgW3bi6Q,org/example/KingPlacementValidator.java
+_gGczsDVZEeqPG_FgW3bi6Q,org/example/FenValidator.java
+_py9KsDVYEeqPG_FgW3bi6Q,org/example/FenValidationRule.java
+_TKDxQDVdEeqPG_FgW3bi6Q,org/example/DefaultPieceCountValidator.java
+_VLMxQDVdEeqPG_FgW3bi6Q,org/example/DefaultKingPlacementValidator.java
+_bC13QDVWEeqPG_FgW3bi6Q,org/example/Main.java
+_RAVbYDVdEeqPG_FgW3bi6Q,org/example/DefaultFenStructureValidator.java
+_Mh_1QDVcEeqPG_FgW3bi6Q,org/example/FenStructureValidator.java
+_Sb4SYDVfEeqPG_FgW3bi6Q,org/example/PieceCountValidator.java
+_AiuxcDVdEeqPG_FgW3bi6Q,org/example/DefaultFenValidator.java

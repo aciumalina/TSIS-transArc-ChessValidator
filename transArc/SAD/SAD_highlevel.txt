@@ -1,0 +1,13 @@
+The ChessPositionValidator system is responsible for validating chess positions expressed using Forsyth–Edwards Notation (FEN).
+The Main component acts as the entry point of the system and delegates the validation of a FEN string to a dedicated validator component.
+The Default Fen Validator component provides the main validation service and coordinates the execution of multiple validation rules.
+This component requires one or more validation rule services and invokes them to assess different aspects of a chess position.
+Each validation rule is represented by a separate component exposing a validation interface.
+The Structure Validator checks whether the FEN string follows the correct structural format.
+The Piece Count Validator verifies constraints related to the number and types of chess pieces.
+The King Placement Validator ensures that the placement of kings follows the rules of chess.
+All validation rule components evaluate the same FEN input independently and return a boolean result.
+The overall validation result is determined by the Fen Validator component based on the outcomes of the individual rule checks.
+
+
+
