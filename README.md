@@ -1,6 +1,6 @@
-# ChessPositionValidator – Running ArDoCo (ICSE’24)
+# ChessPositionValidator – Running TransArC (ICSE’24)
 
-This repository demonstrates how to run the **[ArDoCo](https://github.com/ardoco) (ICSE 2024) traceability recovery model** on the *ChessPositionValidator* sample project in order to recover trace links between **software architecture documentation (SAD)** and **source code**.
+This repository demonstrates how to run the **[TransArC](https://github.com/ardoco) (ICSE 2024) traceability recovery model** on the *ChessPositionValidator* sample project in order to recover trace links between **software architecture documentation (SAD)** and **source code**.
 
 The experiment focuses on the **SAD–Code** traceability scenario and evaluates the results against manually created gold standards.
 
@@ -13,7 +13,7 @@ Before starting, ensure that the following tools are installed:
 - **Git**
 - **Docker**
 
-> All ArDoCo-related tools are executed inside a Docker container.
+> All TransArC-related tools are executed inside a Docker container.
 
 ---
 
